@@ -6,4 +6,6 @@ const lupa=document.querySelector('.lupa');const muestraPlaceholder=document.que
 const home=document.querySelector('#home');const muestraInicio=document.querySelector('.left-inicio');home.addEventListener('click',() => {muestraInicio.classList.toggle('activado');});
 //-- Mostrar Inicio o Presentación  --//
 const itemUno=document.querySelector('.item-uno');const muestraContInicio=document.querySelector('.contenedor-inicio');itemUno.addEventListener('click',() => {muestraContInicio.classList.toggle('activado');});
+//-- Mostrar ventana de presentación de Nosotros --//
+const itemDos=document.querySelector('.item-dos');const contRangerarbsoft=document.querySelector('.container-rangerarbsoft');itemDos.addEventListener('click',() => {contRangerarbsoft.classList.toggle('activado');}); 
 
