@@ -183,7 +183,7 @@
   .icono-placeholder-image {
     width: 60%;
     height: 40px;
-    margin-top: -13px;
+    margin-top: 55px;
     margin-left: -57%;
     padding-top: 2px;
     padding-left: 20%;
@@ -192,25 +192,31 @@
     font-size: 18px;
     border-radius: 10px;
     align-items: center;
-    display: none; /*block */ /* none */
+    display: none;
     opacity: 0;
-    z-index: 260;
-  }
+    z-index: 240;
+    position: absolute; /* Ajuste la posición absoluta para superponer detrás del header */
+    top: -50px; /* Mueva el placeholder arriba del header */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(48%);
+}
 
-  @keyframes muestraPlaceholder {
-    from {
+
+@keyframes muestraPlaceholder {
+  from {
       opacity: 0;
-    }
-    to {
+      top: 35px; /* Posición inicial arriba del header */
+  }
+  to {
       opacity: 1;
-    }
+      top: 0; /* Posición final abajo del header */
   }
+}
 
-  .icono-placeholder-image.activado {
-    display: flex;
-    transform: translate(129%);
-    animation: muestraPlaceholder 350ms ease-in-out both;
-  }
+.icono-placeholder-image.activado {
+  display: flex;
+  animation: muestraPlaceholder 350ms ease-in-out both;
+}
 
   .icono-placeholder-image:hover {
     background-color: rgb(70, 70, 70);
