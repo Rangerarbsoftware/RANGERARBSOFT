@@ -39,6 +39,24 @@
         <h3 class="container-dos">General Gùemes (Salta)</h3>
         <!--Aqui termina los titulos de inicio (Home)-->
 </header>
+
+
+
+
+
+<script src="estilos.js"></script>
+    <script src="estilos.js"></script>
+		<script>
+		$(document).ready(function() {
+    var url = "https://www.bna.com.ar/Cotizador/MonedasHistorico";
+    $.getJSON(url, function(data) {
+        var compra = data[0].Compra;
+        var venta = data[0].Venta;
+        $(".data-compra").text(compra);
+        $(".data-venta").text(venta);
+    });
+});
+	</script>		
     
 </body>
 </html>
