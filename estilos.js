@@ -12,4 +12,6 @@ const itemDos=document.querySelector('.item-dos');const contRangerarbsoft=docume
 const itemTres=document.querySelector('.item-tres');const contContacto=document.querySelector('.contenedor-contacto');itemTres.addEventListener('click',() => {contContacto.classList.toggle('activado');});
 //-- Mostrar Formulario de Suscripción --//
 const itemCuatro=document.querySelector('.item-cuatro');const muestraContainerForm=document.querySelector('.container-form');itemCuatro.addEventListener('click',() => {muestraContainerForm.classList.toggle('activado');});
+//-- Mostrar Formulario de Validación --//
+const validarPass=document.querySelector('#validar-pass');const formValidar=document.querySelector('.form-validar');validarPass.addEventListener('click',() => {formValidar.classList.toggle('activado');});
 
