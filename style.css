@@ -535,5 +535,816 @@
     margin-left: 2%;
     cursor: pointer;
   }
+      /*****************************************************************/
+        /*--   Aqui comienza la ventana de Contenedor de Productos   --*/
+      /*---------------------------------------------------------------*/
+
+  .contenedor-productos {
+    width: 60%;
+    height: 91.5%;
+    margin-top: -0.9%;
+    margin-left: -60.3%; /* 20.2% */ /* -60.3% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 70;
+  }
+
+  @keyframes contProductos {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-productos.activado {
+    display: block;
+    transform: translate(134%); /* 134% */
+    animation: contProductos 350ms ease-in-out both;
+  }
+
+  .contenedor-productos div {
+    display: block;
+    width: 95%;
+    height: 15%;
+    margin-top: 0.5%;
+    margin-bottom: 0.8%;
+    margin-left: 3%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+    float: left;
+  }
+
+  .cont-gastrorest {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 3%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .cont-appcontrato {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 3%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .cont-agroquimica {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 3%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .cont-profesionales {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 3%;
+  }
+
+  .cont-rangerdisk {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 3%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .contenedor-productos img {
+    width: 11%;
+    height: 88%;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    margin-left: 0.8%;
+    float: left;
+    position: relative;
+  }
+
+  .contenedor-productos img #img_uno {
+    width: 11%;
+    height: 88%;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_dos {
+    width: 11%;
+    height: 88%;
+    margin-top: -42%;
+    margin-bottom: 0.5%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_tres {
+    width: 11%;
+    height: 88%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_cuatro {
+    width: 11%;
+    height: 88%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_cinco {
+    width: 11%;
+    height: 88%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-left: -35%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_seis {
+    width: 11%;
+    height: 88%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos p {
+    width: 29%;
+    height: 10vh;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .descrip-gastrorest {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .descrip-contrato {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .descrip-apptabaco {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .descrip-agroquimica {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .descrip-profesionales {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .decrip-rangerdisk {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .boton {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-uno {
+    width: 16%;
+    height: 40px;
+    margin-top: -8%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-dos {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-tres {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-cuatro {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-cinco {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-seis {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  .contenedor-productos .boton:hover {
+    background-color: rgb(80, 80, 80);
+    color: rgb(250, 250, 250);
+  }
+
+  .botones {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-one {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-two {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-three {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-four {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-five {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-six {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  .contenedor-productos .botones:hover {
+    background-color: rgb(10, 10, 250);
+    color: rgb(100, 240, 100);
+  }
+
+  .boton-video {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-uno {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-dos {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-tres {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-cuatro {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-cinco {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-seis {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  .contenedor-productos .boton-video:hover {
+    background-color: rgb(150, 100, 100);
+    color: rgb(10, 10, 250);
+  }
+      /**************************************************************/
+
+      /* ------   Aqui comienza el Contenedor Soporte  -------------*/
+      
+      /*------------------------------------------------------------*/
+
+  .contenedor-soporte {
+    width: 60%;
+    height: 91.5%;
+    margin-top: -0.9%;
+    margin-left: -60.3%; /* 20.2% */ /* -60.3% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 80;
+  }
+
+  @keyframes contSoporte {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-soporte.activado {
+    display: block;
+    transform: translate(134%); /* 134% */
+    animation: contSoporte 350ms ease-in-out both;
+  }
+
+  .contenedor-soporte div {
+    width: 98%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    display: block;
+  }
+
+  .contenedor-soporte .cont-contacto {
+    display: block;
+    width: 98%;
+    height: 20%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .contenedor-soporte .cont-email {
+    display: block;
+    width: 98%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .contenedor-soporte .cont-app {
+    display: block;
+    width: 98%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .contenedor-soporte .cont-recup {
+    display: block;
+    width: 98%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .contenedor-soporte img {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    float: left;
+  }
+
+  .contenedor-soporte img #img-uno {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 1%;
+  }
+
+  .contenedor-soporte img #img-dos {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 1%;
+  }
+
+  .contenedor-soporte img #img-tres {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 1%;
+  }
+
+  .contenedor-soporte img #img-cuatro {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 1%;
+  }
+
+  .contenedor-soporte .parr-soporte {
+    width: 50%;
+    height: 20px;
+    margin-top: 2%;
+    padding-bottom: 0.5%;
+    padding-left: 13%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(200, 50, 100);
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  .contenedor-soporte #parr-uno {
+    width: 30%;
+    height: 30px;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .contenedor-soporte #parr-dos {
+    width: 30%;
+    height: 30px;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .contenedor-soporte #parr-tres {
+    width: 30%;
+    height: 30px;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(200, 50, 100);
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .contenedor-soporte #parr-cuatro {
+    width: 30%;
+    height: 30px;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(200, 50, 100);
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .contenedor-soporte .parr-definicion {
+    width: 70%;
+    height: 30px;
+    margin-top: 4%;
+    margin-bottom: 0.5%;
+    margin-left: 45%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(40, 40 40);
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+  }
 
 }
