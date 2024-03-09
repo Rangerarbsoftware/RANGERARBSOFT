@@ -2726,6 +2726,150 @@
     font-weight: 600;
     cursor: pointer;
   }
+    /*--------------------------------------------------*/
+    /* Aqui comienza el Formulario de validación */
+    /*---------------------------------------------------*/
+  .form-validar {
+    width: 38.9%; /* 38.9% */
+    height: 80%;
+    margin-top: -0.7%; /* -0.7% */
+    margin-left: -40%; /* 20.2% */ /* -40% */
+    padding-left: 1px;
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 40px;
+    background-color: rgb(70, 70, 70);
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    float: left;
+    display: none; /* flex */
+    opacity: 0;
+    z-index: 130;
+  }
+
+  @keyframes muestraFormValidar {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .form-validar.activado {
+    display: block;
+    transform: translate(185%);
+    animation: muestraFormValidar 350ms ease-in-out both;
+  }
+
+  .validar-password {
+    display: flexbox;
+    width: 240px;
+    height: 35px;
+    margin-top: 10%;
+    margin-left: 27%;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+  }
+
+  .contenedor-input6 input {
+    display: flexbox;
+    width: 80%;
+    height: 38px;
+    margin-top: 5%;
+    margin-left: 4.5%;
+    margin-bottom: 6%;
+  }
+
+  #email1 {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    margin-top: 5%;
+    margin-left: 4.5%;
+    margin-bottom: 6%;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: lowercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #pass1 {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    margin-top: 5%;
+    margin-left: 4.5%;
+    margin-bottom: 6%;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #pass2 {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    margin-top: 5%;
+    margin-left: 4.5%;
+    margin-bottom: 6%;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #validar {
+    display: block;
+    width: 50%;
+    height: 43px;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 8%;
+    border-radius: 50px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  #validar-pass {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-top: 7%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    font-size: 16px;
+    background: rgb(40, 40, 40);
+    color: rgb(0, 132, 255);
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+  }
+
 
 
 
