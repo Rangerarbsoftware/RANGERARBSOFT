@@ -529,15 +529,22 @@
                     </div>    
                 </div>
             </form>
+                <!--------------------------------------------------------------------->
+                    <!-- Aqui comienza el Formulario de Recuperación de Contraseña -->
+                <!--------------------------------------------------------------------->
 
+            <form action="" method="POST" class="form-recup-password" onsubmit="return validar();">
+                <div class="form-dos">
+                    <h4 class="recuperar-password">VALIDAR PASSWORD</h4>
+                    <div class="contenedor-input4">
+                        <input type="email" id="email-uno" name="email" placeholder="INGRESE EMAIL" value="" class="input-108" required>
+                        <input type="password" id="recup-pass1" name="password" placeholder="NUEVA CONTRASEÑA" value="" class="input-48" required="">
+                        <input type="password" id="recup-pass2" name="password" placeholder=" REPETIR NUEVA CONTRASEÑA" value="" class="input-48" required="">
+                        <input type="submit" id="recup-validar" name="VALIDAR" value="VALIDAR" class="btn-enviar" required>
+                    </div>    
+                </div>
+            </form>  	 			
 
-
-
-
-
-
-
-<script src="estilos.js"></script>
     <script src="estilos.js"></script>
 		<script>
 		$(document).ready(function() {
