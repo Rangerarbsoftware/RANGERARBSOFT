@@ -2559,6 +2559,174 @@
     margin-top: -10%;
     margin-left: 2%;
   }
+    /**************************************************************/
+
+          /* Aqui comienza el Formulario de Suscripción */
+          
+    /*------------------------------------------------------------*/
+
+  .container-form-suscrip {
+    width: 38.9%; /* 38.9% */
+    height: 91.5%;
+    margin-top: -0.8%; /* 0.8% */
+    margin-left: -40%; /* 20.2% */ /* -40% */
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 40px;
+    background-color: rgb(125, 125, 125);
+    position: absolute; /* relative */
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 120;
+  }
+
+  @keyframes muestraFormSuscripcion {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-form-suscrip.activado {
+    display: block; /* block */
+    transform: translate(155%); /* 185% */
+    animation: muestraFormSuscripcion 350ms ease-in-out both;
+  }
+
+  .form-reg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 1px;
+    margin-left: 0.2%;
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 40px;
+    background-color: rgb(40, 40, 40);
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .registro-reg {
+    width: 75%;
+    height: 30px;
+    margin-top: -105%;
+    padding-top: 3px;
+    padding-left: 24.8%;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    display: flex; /* flexbox */
+  }
+  .select_productos {
+    display: flex;
+    width: 90%;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3%;
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .opciones {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3%;
+    font-size: 18px;
+    color: rgb(3, 3, 3);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  input {
+    display: flex;
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3%;
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #nombre {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #apellido {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #domicilio {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #telefono {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #email {
+    text-transform: lowercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #pass {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #registrar {
+    display: flex;
+    width: 55%;
+    height: 45px;
+    margin-top: 0.5%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    padding-top: 2px;
+    padding-left: 20%;
+    font-size: 16px;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
 
 
 
