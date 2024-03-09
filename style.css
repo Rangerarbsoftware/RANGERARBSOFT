@@ -1416,5 +1416,118 @@
     font-size: 22px;
     color: rgb(60, 60, 60);
   }
+    /**************************************************************/
+    /* ------   Aqui comienza el Contenedor Cotización  -------*/
+    /*------------------------------------------------------------*/
+
+  .contenedor-cotizacion {
+    width: 34%;
+    height: 91.5%;
+    margin-top: -0.9%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 95;
+  }
+
+  @keyframes contCotizacion {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-cotizacion.activado {
+    display: block;
+    transform: translate(163%); /* 145.8% */ /* 134% */ /* 163.8% */
+    animation: contCotizacion 350ms ease-in-out both;
+  }
+
+  .titulo-cotizacion {
+    width: 80%;
+    height: 50px;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: rgb(200, 50, 100);
+    color: rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .content-dolar-compra {
+    width: 30%;
+    height: 45px;
+    margin-top: 20%;
+    margin-left: 5%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+    float: left;
+  }
+
+  .cont-dolar_compra {
+    width: 80%;
+    height: 35px;
+    padding-top: 2%;
+    padding-left: 5%;
+    font-size: 18px;
+    align-content: center;
+    align-content: center;
+  }
+
+  .parr-dolar-compra {
+    width: 150%;
+    height: 45px;
+    margin-top: -20%;
+    margin-left: 125%;
+    padding-top: 9%;
+    padding-left: 35%;
+    color: rgb(10, 10, 250);
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+  }
+
+  .content-dolar-venta {
+    width: 30%;
+    height: 45px;
+    margin-top: 65%;
+    margin-left: 5%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    float: left;
+  }
+
+  .cont-dolar_venta {
+    width: 80%;
+    height: 35px;
+    padding-top: 2%;
+    padding-left: 5%;
+    font-size: 18px;
+    align-content: center;
+    align-content: center;
+  }
+
+  .parr-dolar-venta {
+    width: 150%;
+    height: 45px;
+    margin-top: -20%;
+    margin-left: 125%;
+    padding-top: 9%;
+    padding-left: 35%;
+    color: rgb(10, 10, 250);
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+  }
 
 }
