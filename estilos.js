@@ -18,4 +18,6 @@ const validarPass=document.querySelector('#validar-pass');const formValidar=docu
 const recupPass=document.querySelector('#validar');const formEnvCod=document.querySelector('.form-enviar-codigo');recupPass.addEventListener('click',() => {formEnvCod.classList.toggle('activado');});
 //-- Mostrar ventana de Calendario --//
 const itemCinco=document.querySelector('.item-cinco');const contCalendario=document.querySelector('.cont-calendario');itemCinco.addEventListener('click',() => {contCalendario.classList.toggle('activado');}); 
+//-- Mostrar ventana de Indice-left --//
+const mostrarIndiceLeft=document.querySelector('#indice');const muestraIndice=document.querySelector('.left');mostrarIndiceLeft.addEventListener('click',() => {muestraIndice.classList.toggle('activado');});
 
