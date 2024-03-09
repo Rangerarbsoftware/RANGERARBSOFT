@@ -14,4 +14,6 @@ const itemTres=document.querySelector('.item-tres');const contContacto=document.
 const itemCuatro=document.querySelector('.item-cuatro');const muestraContainerForm=document.querySelector('.container-form');itemCuatro.addEventListener('click',() => {muestraContainerForm.classList.toggle('activado');});
 //-- Mostrar Formulario de Validación --//
 const validarPass=document.querySelector('#validar-pass');const formValidar=document.querySelector('.form-validar');validarPass.addEventListener('click',() => {formValidar.classList.toggle('activado');});
+//-- Mostrar Formulario de Recuperación --//
+const recupPass=document.querySelector('#validar');const formEnvCod=document.querySelector('.form-enviar-codigo');recupPass.addEventListener('click',() => {formEnvCod.classList.toggle('activado');});
 
