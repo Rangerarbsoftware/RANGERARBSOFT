@@ -10,4 +10,6 @@ const itemUno=document.querySelector('.item-uno');const muestraContInicio=docume
 const itemDos=document.querySelector('.item-dos');const contRangerarbsoft=document.querySelector('.container-rangerarbsoft');itemDos.addEventListener('click',() => {contRangerarbsoft.classList.toggle('activado');}); 
 //-- Mostrar ventana de presentación de Contacto --//
 const itemTres=document.querySelector('.item-tres');const contContacto=document.querySelector('.contenedor-contacto');itemTres.addEventListener('click',() => {contContacto.classList.toggle('activado');});
+//-- Mostrar Formulario de Suscripción --//
+const itemCuatro=document.querySelector('.item-cuatro');const muestraContainerForm=document.querySelector('.container-form');itemCuatro.addEventListener('click',() => {muestraContainerForm.classList.toggle('activado');});
 
