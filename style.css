@@ -2990,6 +2990,106 @@
     align-content: center;
     position: absolute;
   }
+    /*----------------------------------------------------------*/
+    /* Aqui comienza el Formulario de enviar Código */
+    /*---------------------------------------------------------*/
+  .form-enviar-codigo {
+    width: 38.9%; /* 38.9% */
+    height: 80%;
+    margin-top: -0.2%; /* -1.6% */
+    margin-left: -40%; /* 20.2% */ /* -40% */
+    padding-top: 10px;
+    padding-left: 5px;
+    float: left;
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 10%;
+    background-color: rgb(70, 70, 70);
+    position: relative;
+    padding-top: 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; /* absolute */
+    float: left;
+    display: none; /* flex */
+    opacity: 0;
+    z-index: 150;
+  }
+
+  @keyframes muestraFormEnviarCodigo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .form-enviar-codigo.activado {
+    display: block;
+    transform: translate(185%);
+    animation: muestraFormEnviarCodigo 350ms ease-in-out both;
+  }
+
+  #validar-codigo {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin-top: 10%;
+    margin-left: 26%;
+    margin-bottom: 8%;
+    padding-top: 10px;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    text-align: center;
+    font-size: 18px;
+    justify-content: space-between;
+  }
+
+  .form-enviar-codigo p {
+    display: flexbox;
+    width: 70%;
+    font-size: 21px;
+    margin: 10px auto;
+    color: rgb(100, 258, 100);
+    text-align: justify;
+    margin-bottom: 10%;
+    font-weight: 600;
+  }
+
+  #val-cod {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #enviar-codigo {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-bottom: 8%;
+    border-radius: 50px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+  }
 
 
 
