@@ -486,6 +486,21 @@
                         <input type="submit" id="registrar" value="Registrar" value="" class="btn-enviar">
                 </form>
             </div>
+                <!------------------------------------------------------>
+                    <!-- Aqui comienza el Formulario de Validación -->
+                <!------------------------------------------------------>
+            <form action="" method="POST" class="form-validar">
+                <div class="form-dos">
+                    <h4 class="validar-password">VALIDAR USUARIO</h4>
+                    <div class="contenedor-input6">
+                        <input type="email" id="email1" name="email" placeholder="Email" value="" class="input-108" required>
+                        <input type="password" id="pass1" name="password" placeholder="CONTRASEÑA" value="" class="input-48">
+                        <input type="password" id="pass2" name="password" placeholder=" REPETIR CONTRASEÑA" value="" class="input-48">
+                        <input type="submit" id="validar" name="VALIDAR" value="VALIDAR" class="btn-enviar" required>
+                        <input type="submit" id="validar-pass" value="Olvidaste tu contraseña..?" value="" class="btn-enviar" onsubmit="return mostrarConfirmarUser();">        
+                    </div>    
+                </div>
+            </form>
 
 
 
