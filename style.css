@@ -1970,5 +1970,114 @@
     font-size: 19px;
     font-weight: 600;
   }
+    /**************************************************************************/
+    /* ----   Aqui comienza el Contenedor Profesionales-Sianca-Valley  -------*/
+    /*------------------------------------------------------------------------*/
+
+  .contenedor-profesionales {
+    width: 34%;
+    height: 91%;
+    margin-top: -0.9%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 100;
+  }
+
+  @keyframes contProfesionales {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-profesionales.activado {
+    display: block;
+    transform: translate(163.8%); /* 145.8% */ /* 1.5% */
+    animation: contProfesionales 350ms ease-in-out both;
+  }
+
+  .contenedor-line-nueve {
+    width: 95%;
+    height: 90vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .profesionales {
+    width: 85%;
+    height: 27vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 6%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .descripcion-profesionales {
+    width: 90%;
+    height: 35vh;
+    margin-top: 47%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(40, 40, 40);
+  }
+
+  .contenedor-line-diez {
+    width: 90%;
+    height: 10vh;
+    margin-top: 118%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .costo-profesionales {
+    width: 62%;
+    height: 3vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .contenedor-importe-profesionales {
+    width: 30%;
+    height: 50%;
+    margin-top: -5%;
+    margin-bottom: 2%;
+    margin-left: 68%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 5px;
+  }
+
+  .importe-profesionales {
+    width: 35%;
+    height: 3vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    font-family: arial san serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
 
 }
