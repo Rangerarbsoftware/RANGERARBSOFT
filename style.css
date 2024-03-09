@@ -2436,6 +2436,68 @@
     margin-top: -10%;
     margin-left: 2%;
   }
+    /********************************************************************************/
+    /* ----   Aqui comienza contenedor de Video Profesionales-Sianca-Valley  -------*/
+    /*------------------------------------------------------------------------------*/
+  .contenedor-video-profesionales {
+    width: 49%;
+    height: 90%;
+    margin-top: -0.2%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 110;
+  }
+
+  @keyframes contVideoProfesionales {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-video-profesionales.activado {
+    display: block;
+    transform: translate(113%); /* 145.8% */ /* 1.5% */
+    animation: contVideoProfesionales 350ms ease-in-out both;
+  }
+
+  .contenedor-line-five {
+    width: 95%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 1.5%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .titulo-video-cinco {
+    width: 70%;
+    height: 30px;
+    margin-top: -1%;
+    margin-left: 12%;
+    font-family: arial san serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+  }
+
+  video {
+    width: 96.8%;
+    height: 99.5%;
+    margin-top: -10%;
+    margin-left: 2%;
+  }
+
 
 
 
