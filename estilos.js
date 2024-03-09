@@ -16,4 +16,6 @@ const itemCuatro=document.querySelector('.item-cuatro');const muestraContainerFo
 const validarPass=document.querySelector('#validar-pass');const formValidar=document.querySelector('.form-validar');validarPass.addEventListener('click',() => {formValidar.classList.toggle('activado');});
 //-- Mostrar Formulario de Recuperación --//
 const recupPass=document.querySelector('#validar');const formEnvCod=document.querySelector('.form-enviar-codigo');recupPass.addEventListener('click',() => {formEnvCod.classList.toggle('activado');});
+//-- Mostrar ventana de Calendario --//
+const itemCinco=document.querySelector('.item-cinco');const contCalendario=document.querySelector('.cont-calendario');itemCinco.addEventListener('click',() => {contCalendario.classList.toggle('activado');}); 
 
