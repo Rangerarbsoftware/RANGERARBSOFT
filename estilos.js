@@ -20,4 +20,6 @@ const recupPass=document.querySelector('#validar');const formEnvCod=document.que
 const itemCinco=document.querySelector('.item-cinco');const contCalendario=document.querySelector('.cont-calendario');itemCinco.addEventListener('click',() => {contCalendario.classList.toggle('activado');}); 
 //-- Mostrar ventana de Indice-left --//
 const mostrarIndiceLeft=document.querySelector('#indice');const muestraIndice=document.querySelector('.left');mostrarIndiceLeft.addEventListener('click',() => {muestraIndice.classList.toggle('activado');});
+//-- Girar a Horizontal y Vertical Ventana de Imagenes y Videos -->
+const ampliarImagen=document.querySelector('#ampliar');const contenedorImagen=document.querySelector('.contenedor-principal div img');ampliarImagen.addEventListener('click',() => {contenedorImagen.classList.toggle('activado');});
 
