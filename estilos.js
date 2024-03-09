@@ -8,4 +8,6 @@ const home=document.querySelector('#home');const muestraInicio=document.querySel
 const itemUno=document.querySelector('.item-uno');const muestraContInicio=document.querySelector('.contenedor-inicio');itemUno.addEventListener('click',() => {muestraContInicio.classList.toggle('activado');});
 //-- Mostrar ventana de presentación de Nosotros --//
 const itemDos=document.querySelector('.item-dos');const contRangerarbsoft=document.querySelector('.container-rangerarbsoft');itemDos.addEventListener('click',() => {contRangerarbsoft.classList.toggle('activado');}); 
+//-- Mostrar ventana de presentación de Contacto --//
+const itemTres=document.querySelector('.item-tres');const contContacto=document.querySelector('.contenedor-contacto');itemTres.addEventListener('click',() => {contContacto.classList.toggle('activado');});
 
