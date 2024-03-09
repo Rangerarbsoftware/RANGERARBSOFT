@@ -1529,5 +1529,118 @@
     font-weight: 700;
     float: left;
   }
+    /**************************************************************/
+    /* ----   Aqui comienza el Contenedor GastroRest  -------*/
+    /*------------------------------------------------------------*/
+
+  .contenedor-gastrorest {
+    width: 34%;
+    height: 91.5%;
+    margin-top: -0.9%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 100;
+  }
+
+  @keyframes contGastrorest {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-gastrorest.activado {
+    display: block;
+    transform: translate(163.8%); /* 145.8% */ /* 1.5% */
+    animation: contGastrorest 350ms ease-in-out both;
+  }
+
+  .contenedor-line-uno {
+    width: 95%;
+    height: 90vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .gastrorest {
+    width: 90%;
+    height: 32vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .descripcion-gastrorest {
+    width: 90%;
+    height: 35vh;
+    margin-top: 54.5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(40, 40, 40);
+  }
+
+  .contenedor-line-dos {
+    width: 90%;
+    height: 10vh;
+    margin-top: 118%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    float: left;
+  }
+
+  .costo-gastrorest {
+    width: 45%;
+    height: 3vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 600;
+    float: left;
+  }
+
+  .contenedor-importe {
+    width: 30%;
+    height: 50%;
+    margin-top: -5%;
+    margin-bottom: 2%;
+    margin-left: 60%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 5px;
+    float: left;
+  }
+
+  .importe-gastrorest {
+    width: 35%;
+    height: 3vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
 
 }
