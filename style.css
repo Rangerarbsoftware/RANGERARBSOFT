@@ -1133,7 +1133,7 @@
       /**************************************************************/
 
       /* ------   Aqui comienza el Contenedor Soporte  -------------*/
-      
+
       /*------------------------------------------------------------*/
 
   .contenedor-soporte {
@@ -1345,6 +1345,76 @@
     align-content: center;
     flex-direction: column;
     text-decoration: none;
+  }
+    /**************************************************************/
+      /* ------   Aqui comienza el Contenedor Garantía  -------*/
+    /*------------------------------------------------------------*/
+
+  .contenedor-garantia {
+    width: 79.8%;
+    height: 350vh;
+    margin-top: -0.9%; /* -1.5% */
+    margin-left: -60.3%; /* 20.2% */ /* -60.3% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    position: relative;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 90;
+  }
+
+  @keyframes contGarantia {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-garantia.activado {
+    display: block;
+    transform: translate(101%); /* 145.8% */ /* 1.5% */
+    animation: contGarantia 350ms ease-in-out both;
+  }
+
+  h1 {
+    width: 60%;
+    height: 20px;
+    padding-top: 3%;
+    margin-left: 20%;
+    font-family: arial, sann serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(60, 60, 60);
+    text-align: center;
+    align-content: center;
+  }
+
+  .parr-garantia {
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    position: absolute;
+    justify-content: space-between;
+    font-family: arial, sann serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(40, 40, 40);
+    text-align: justify;
+  }
+
+  .autor {
+    width: 50%;
+    height: 20px;
+    margin-top: 340vh; /* 348vh */
+    margin-left: 50%;
+    font-family: arial, sann serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(60, 60, 60);
   }
 
 }
