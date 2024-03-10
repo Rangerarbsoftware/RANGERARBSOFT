@@ -183,39 +183,34 @@
   .icono-placeholder-image {
     width: 60%;
     height: 40px;
-    margin-top: 55px;
+    margin-top: -10px;
     margin-left: -57%;
     padding-top: 2px;
-    padding-left: 20%;
+    padding-left: 5%;
     background-color: rgb(50, 250, 80);
     color: rgb(10, 10, 250);
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 10px;
     align-items: center;
-    display: none;
+    display: none; /*block */ /* none */
     opacity: 0;
-    z-index: 240;
-    position: absolute; /* Ajuste la posición absoluta para superponer detrás del header */
-    top: -50px; /* Mueva el placeholder arriba del header */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translateX(48%);
+    z-index: 260;
 }
 
 
 @keyframes muestraPlaceholder {
   from {
-      opacity: 0;
-      top: 35px; /* Posición inicial arriba del header */
+    opacity: 0;
   }
   to {
-      opacity: 1;
-      top: 0; /* Posición final abajo del header */
+    opacity: 1;
   }
 }
 
 .icono-placeholder-image.activado {
   display: flex;
-  animation: muestraPlaceholder 350ms ease-in-out both;
+    transform: translate(129%);
+    animation: muestraPlaceholder 350ms ease-in-out both;
 }
 
   .icono-placeholder-image:hover {
