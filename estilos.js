@@ -232,6 +232,54 @@ function mostrarRangerDisk() {
   document.querySelector(".contenedor-agroquimica").style.display = "none";
   document.querySelector(".contenedor-profesionales").style.display = "none";
 }
+//-- Mostrar Form Suscripcion desde #btn-one Comprar --//
+const formSuscri = document.querySelector("#btn-one");
+const muestraFormSuscripc = document.querySelector(
+  ".container-form-suscrip"
+);
+formSuscri.addEventListener("click", () => {
+  muestraFormSuscripc.classList.toggle("activado");
+});
+//-- Mostrar Form Suscripcion desde #btn-two Comprar --//
+const formSuscripcion = document.querySelector("#btn-two");
+const muestraFormSuscrip = document.querySelector(
+  ".container-form-suscrip"
+);
+formSuscripcion.addEventListener("click", () => {
+  muestraFormSuscrip.classList.toggle("activado");
+});
+//-- Mostrar Form Suscripcion desde #btn-three Comprar --//
+const FormSuscr = document.querySelector("#btn-three");
+const muestraFormSuscr = document.querySelector(
+  ".container-form-suscrip"
+);
+FormSuscr.addEventListener("click", () => {
+  muestraFormSuscr.classList.toggle("activado");
+});
+//-- Mostrar Form Suscripcion desde #btn-four Comprar --//
+const formularioSuscripcion = document.querySelector("#btn-four");
+const muestraFormularioSuscripcion = document.querySelector(
+  ".container-form-suscrip"
+);
+formularioSuscripcion.addEventListener("click", () => {
+  muestraFormularioSuscripcion.classList.toggle("activado");
+});
+//-- Mostrar Form Suscripcion desde #btn-five Comprar --//
+const formularioSuscripc = document.querySelector("#btn-five");
+const muestraFormularioSuscripc = document.querySelector(
+  ".container-form-suscrip"
+);
+formularioSuscripc.addEventListener("click", () => {
+  muestraFormularioSuscripc.classList.toggle("activado");
+});
+//-- Mostrar Form Suscripcion desde #btn-six Comprar --//
+const formularioSuscr = document.querySelector("#btn-six");
+const muestraFormularioSuscr = document.querySelector(
+  ".container-form-suscrip"
+);
+formularioSuscr.addEventListener("click", () => {
+  muestraFormularioSuscr.classList.toggle("activado");
+});
 //-- Mostrar ventana de presentación de Video GastroRest --//
 const videoGastroRest = document.querySelector("#btn-video-uno");
 const contVideoGastroRest = document.querySelector(
@@ -482,4 +530,42 @@ const recupPass = document.querySelector("#enviar-codigo");
 const muestraFormRecuperarPass = document.querySelector(".form-recup-password");
 recupPass.addEventListener("click", () => {
   muestraFormRecuperarPass.classList.toggle("activado");
+});
+//-------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------//
+const selectProductos = document.querySelector(".select_productos");
+
+const btnOne = document.querySelector("#btn-one");
+btnOne.addEventListener("click", () => {
+  selectProductos.selectedIndex = 0;
+});
+
+const btnTwo = document.querySelector("#btn-two");
+btnTwo.addEventListener("click", () => {
+  selectProductos.selectedIndex = 1;
+});
+
+const btnThree = document.querySelector("#btn-three");
+btnThree.addEventListener("click", () => {
+  selectProductos.selectedIndex = 2;
+});
+
+const btnFour = document.querySelector("#btn-four");
+btnFour.addEventListener("click", () => {
+  selectProductos.selectedIndex = 3;
+});
+
+const btnFive = document.querySelector("#btn-five");
+btnFive.addEventListener("click", () => {
+  selectProductos.selectedIndex = 4;
+});
+
+const btnSix = document.querySelector("#btn-six");
+btnSix.addEventListener("click", () => {
+  selectProductos.selectedIndex = 5;
+});
+
+// Para deshabilitar la selección desde el select
+selectProductos.addEventListener("change", () => {
+  selectProductos.selectedIndex = -1;
 });
