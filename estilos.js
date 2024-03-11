@@ -101,6 +101,24 @@ function mostrarCotizacion() {
   document.querySelector(".contenedor-soporte").style.display = "none";
   document.querySelector(".container-garantia").style.display = "none";
 }
+//--- Funcion Cotizacion del Dolar Hoy ---//
+$(document).ready(function() {
+    function actualizarCotizacion() {
+        var url = "https://www.bna.com.ar/Cotizador/MonedasHistorico";
+        $.getJSON(url, function(data) {
+            var compra = data[0].Compra;
+            var venta = data[0].Venta;
+            $(".data-compra").text(compra);
+            $(".data-venta").text(venta);
+        });
+    }
+
+    actualizarCotizacion(); // Llamar a la función para mostrar la cotización al cargar la página
+
+    setInterval(actualizarCotizacion, 600000); // Actualizar la cotización cada 10 minutos (600,000 ms)
+});
+
+
 //-- Mostrar ventana de presentación de GastroRest --//
 const gastroRest = document.querySelector("#btn-uno");
 const contGastrorest = document.querySelector(".contenedor-gastrorest");
