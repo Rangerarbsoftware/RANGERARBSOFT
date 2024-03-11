@@ -283,108 +283,108 @@ formularioSuscr.addEventListener("click", () => {
 //-- Mostrar ventana de presentación de Video GastroRest --//
 const videoGastroRest = document.querySelector("#btn-video-uno");
 const contVideoGastroRest = document.querySelector(
-  ".container-video-gastrorest"
+  ".contenedor-video-gastrorest"
 );
 videoGastroRest.addEventListener("click", () => {
   contVideoGastroRest.classList.toggle("activado");
 });
 function mostrarVideoGastroRest() {
   if (
-    (document.querySelector(".container-video-gastrorest").style.display =
+    (document.querySelector(".contenedor-video-gastrorest").style.display =
       "block")
   );
-  document.querySelector(".container-video-appcontrato").style.display = "none";
-  document.querySelector(".container-video-apptabaco").style.display = "none";
-  document.querySelector(".container-video-agroquimica").style.display = "none";
+  document.querySelector(".contenedor-video-appcontrato").style.display = "none";
+  document.querySelector(".contenedor-video-apptabaco").style.display = "none";
+  document.querySelector(".contenedor-video-agroquimica").style.display = "none";
   document.querySelector(".contenedor-profesionales").style.display = "none";
-  document.querySelector(".container-video-rangerarbsoftdisk").style.display =
+  document.querySelector(".contenedor-video-rangerarbsoftdisk").style.display =
     "none";
 }
 //-- Mostrar ventana de presentación de Video AppContratoAlquiler --//
 const videoAppcontrato = document.querySelector("#btn-video-dos");
 const contVideoAppcontrato = document.querySelector(
-  ".container-video-appcontrato"
+  ".contenedor-video-appcontrato"
 );
 videoAppcontrato.addEventListener("click", () => {
   contVideoAppcontrato.classList.toggle("activado");
 });
 function mostrarVideoAppcontrato() {
   if (
-    (document.querySelector(".container-video-appcontrato").style.display =
+    (document.querySelector(".contenedor-video-appcontrato").style.display =
       "block")
   );
-  document.querySelector(".container-video-gastrorest").style.display = "none";
-  document.querySelector(".container-video-apptabaco").style.display = "none";
-  document.querySelector(".container-video-agroquimica").style.display = "none";
-  document.querySelector(".container-video-profesionales").style.display =
+  document.querySelector(".contenedor-video-gastrorest").style.display = "none";
+  document.querySelector(".contenedor-video-apptabaco").style.display = "none";
+  document.querySelector(".contenedor-video-agroquimica").style.display = "none";
+  document.querySelector(".contenedor-video-profesionales").style.display =
     "none";
-  document.querySelector(".container-video-rangerarbsoftdisk").style.display =
+  document.querySelector(".contenedor-video-rangerarbsoftdisk").style.display =
     "none";
 }
 //-- Mostrar ventana de presentación de Video AppTABACO --//
 const videoAppTabaco = document.querySelector("#btn-video-tres");
-const contVideoAppTabaco = document.querySelector(".container-video-apptabaco");
+const contVideoAppTabaco = document.querySelector(".contenedor-video-apptabaco");
 videoAppTabaco.addEventListener("click", () => {
   contVideoAppTabaco.classList.toggle("activado");
 });
 function mostrarVideoAppTabaco() {
   if (
-    (document.querySelector(".container-video-apptabaco").style.display =
+    (document.querySelector(".contenedor-video-apptabaco").style.display =
       "block")
   );
-  document.querySelector(".container-video-gastrorest").style.display = "none";
-  document.querySelector(".container-video-appcontrato").style.display = "none";
-  document.querySelector(".container-video-agroquimica").style.display = "none";
-  document.querySelector(".container-video-profesionales").style.display =
+  document.querySelector(".contenedor-video-gastrorest").style.display = "none";
+  document.querySelector(".contenedor-video-appcontrato").style.display = "none";
+  document.querySelector(".contenedor-video-agroquimica").style.display = "none";
+  document.querySelector(".contenedor-video-profesionales").style.display =
     "none";
-  document.querySelector(".container-video-rangerarbsoftdisk").style.display =
+  document.querySelector(".contenedor-video-rangerarbsoftdisk").style.display =
     "none";
 }
 //-- Mostrar ventana de presentación de Video AgroQuimicaSolutions --//
 const videoAgroQuimica = document.querySelector("#btn-video-cuatro");
 const contVideoAgroQuimica = document.querySelector(
-  ".container-video-agroquimica"
+  ".contenedor-video-agroquimica"
 );
 videoAgroQuimica.addEventListener("click", () => {
   contVideoAgroQuimica.classList.toggle("activado");
 });
 function mostrarVideoAgroQuimica() {
   if (
-    (document.querySelector(".container-video-agroquimica").style.display =
+    (document.querySelector(".contenedor-video-agroquimica").style.display =
       "block")
   );
-  document.querySelector(".container-video-gastrorest").style.display = "none";
-  document.querySelector(".container-video-appcontrato").style.display = "none";
-  document.querySelector(".container-video-apptabaco").style.display = "none";
-  document.querySelector(".container-video-profesionales").style.display =
+  document.querySelector(".contenedor-video-gastrorest").style.display = "none";
+  document.querySelector(".contenedor-video-appcontrato").style.display = "none";
+  document.querySelector(".contenedor-video-apptabaco").style.display = "none";
+  document.querySelector(".contenedor-video-profesionales").style.display =
     "none";
-  document.querySelector(".container-video-rangerarbsoftdisk").style.display =
+  document.querySelector(".contenedor-video-rangerarbsoftdisk").style.display =
     "none";
 }
 //-- Mostrar ventana de presentación de Video Profesionales-Sianca-Valley --//
 const videoProfesionales = document.querySelector("#btn-video-cinco");
 const contVideoProfesionales = document.querySelector(
-  ".container-video-profesionales"
+  ".contenedor-video-profesionales"
 );
 videoProfesionales.addEventListener("click", () => {
   contVideoProfesionales.classList.toggle("activado");
 });
 function mostrarVideoProfesionales() {
   if (
-    (document.querySelector(".container-video-profesionales").style.display =
+    (document.querySelector(".contenedor-video-profesionales").style.display =
       "block")
   );
-  document.querySelector(".container-video-gastrorest").style.display = "none";
-  document.querySelector(".container-video-appcontrato").style.display = "none";
-  document.querySelector(".container-video-apptabaco").style.display = "none";
-  document.querySelector(".container-video-agroquimica").style.display = "none";
-  document.querySelector(".container-video-rangerarbsoftdisk").style.display =
+  document.querySelector(".contenedor-video-gastrorest").style.display = "none";
+  document.querySelector(".contenedor-video-appcontrato").style.display = "none";
+  document.querySelector(".contenedor-video-apptabaco").style.display = "none";
+  document.querySelector(".contenedor-video-agroquimica").style.display = "none";
+  document.querySelector(".contenedor-video-rangerarbsoftdisk").style.display =
     "none";
 }
 //-- Mostrar ventana de presentación de Video RangerarbsoftDisk --//
 const videoRangerarbDisk = document.querySelector("#btn-video-seis");
 const contVideoRangerarbsoftDisk = document.querySelector(
-  ".container-video-rangerarbsoftdisk"
+  ".contenedor-video-rangerarbsoftdisk"
 );
 videoRangerarbDisk.addEventListener("click", () => {
   contVideoRangerarbsoftDisk.classList.toggle("activado");
@@ -392,14 +392,14 @@ videoRangerarbDisk.addEventListener("click", () => {
 function mostrarVideoRangerarbDisk() {
   if (
     (document.querySelector(
-      ".container-video-rangerarbsoftdisk"
+      ".contenedor-video-rangerarbsoftdisk"
     ).style.display = "block")
   );
-  document.querySelector(".container-video-gastrorest").style.display = "none";
-  document.querySelector(".container-video-appcontrato").style.display = "none";
-  document.querySelector(".container-video-apptabaco").style.display = "none";
+  document.querySelector(".contenedor-video-gastrorest").style.display = "none";
+  document.querySelector(".contenedor-video-appcontrato").style.display = "none";
+  document.querySelector(".contenedor-video-apptabaco").style.display = "none";
   document.querySelector(".container-video-agroquimica").style.display = "none";
-  document.querySelector(".container-video-profesionales").style.display =
+  document.querySelector(".contenedor-video-profesionales").style.display =
     "none";
 }
 //-- Mostrar ventana de presentación de Form Suscripción GastroRest--//
