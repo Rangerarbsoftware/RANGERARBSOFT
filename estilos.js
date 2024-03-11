@@ -355,11 +355,11 @@ function mostrarVideoRangerarbDisk() {
     "none";
 }
 //-- Mostrar ventana de presentación de Form Suscripción GastroRest--//
-const formSuscripcionGastroRest = document.querySelector("#btn4");
+const FormSuscrip = document.querySelector("#btn4");
 const muestraFormSuscripcion = document.querySelector(
   ".container-form-suscrip"
 );
-formSuscripcionGastroRest.addEventListener("click", () => {
+FormSuscrip.addEventListener("click", () => {
   muestraFormSuscripcion.classList.toggle("activado");
 });
 //-- Funcion para validar FormSuscripcion --//
