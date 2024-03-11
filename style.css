@@ -397,7 +397,7 @@
   .contenedor-contacto {
     width: 60%;
     height: 92vh;
-    margin-top: -0.9%;
+    margin-top: -0.1%;
     margin-left: -67.3%; /* 20.2% */ /* -67.3% */
     border-radius: 15px;
     background-color: rgb(130, 130, 130);
@@ -537,7 +537,7 @@
   .contenedor-productos {
     width: 60%;
     height: 91.5%;
-    margin-top: -0.9%;
+    margin-top: -0.1%;
     margin-left: -60.3%; /* 20.2% */ /* -60.3% */
     border-radius: 15px;
     background-color: rgb(130, 130, 130);
@@ -1134,7 +1134,7 @@
   .contenedor-soporte {
     width: 60%;
     height: 91.5%;
-    margin-top: -0.9%;
+    margin-top: -0.1%;
     margin-left: -60.3%; /* 20.2% */ /* -60.3% */
     border-radius: 15px;
     background-color: rgb(130, 130, 130);
@@ -1348,7 +1348,7 @@
   .contenedor-garantia {
     width: 79.8%;
     height: 350vh;
-    margin-top: -0.9%; /* -1.5% */
+    margin-top: -0.1%; /* -1.5% */
     margin-left: -60.3%; /* 20.2% */ /* -60.3% */
     border-radius: 15px;
     background-color: rgb(130, 130, 130);
@@ -1369,7 +1369,7 @@
 
   .contenedor-garantia.activado {
     display: block;
-    transform: translate(101%); /* 145.8% */ /* 1.5% */
+    transform: translate(100.8%); /* 145.8% */ /* 1.5% */
     animation: contGarantia 350ms ease-in-out both;
   }
 
@@ -1418,7 +1418,7 @@
   .contenedor-cotizacion {
     width: 34%;
     height: 91.5%;
-    margin-top: -0.9%;
+    margin-top: -0.1%;
     margin-left: -35.2%; /* 20.2% */ /* -35.2% */
     border-radius: 15px;
     background-color: rgb(130, 130, 130);
