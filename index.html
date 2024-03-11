@@ -188,19 +188,22 @@
 	 			<!--Aqui comienza contenedor de Cotización -->
 				<!---------------------------------------------->
 
-		    <div class="contenedor-cotizacion">
-                <h1 class="titulo-cotizacion">$ Cotizacion Dolar Hoy</h1>
+                <div class="contenedor-cotizacion">
+                    <h1 class="titulo-cotizacion">$ Cotización Dólar Hoy</h1>
                     <div class="content-dolar-compra">
                         <a class="cont-dolar_compra" href="https://www.bna.com.ar/" target="_blank">
-                       <span class="value data-compra"></span>
+                            <span class="value data-compra"></span> <!-- Aquí se mostrará la cotización de compra -->
                         </a>
-                        <p class="parr-dolar-compra">Cotización Dolar Compra</p>		
+                        <p class="parr-dolar-compra">Cotización Dólar Compra</p>
                     </div>
-                        <div class="content-dolar-venta">
-                            <a class="cont-dolar_venta" href=""><span class="value data-venta"></span>"></a>
-                            <p class="parr-dolar-venta">Cotización Dolar Venta</p>		
-                    </div> 			
-            </div>
+                    <div class="content-dolar-venta">
+                        <a class="cont-dolar_venta" href="">
+                            <span class="value data-venta"></span> <!-- Aquí se mostrará la cotización de venta -->
+                        </a>
+                        <p class="parr-dolar-venta">Cotización Dólar Venta</p>
+                    </div>
+                </div>
+                
                 <!----------------------------------------->
 				<!--Aqui comienza contenedor de GastroRest -->
 	 			<!----------------------------------------->
@@ -546,17 +549,25 @@
             </form>  	 			
 
     <script src="estilos.js"></script>
-		<script>
-		$(document).ready(function() {
-    var url = "https://www.bna.com.ar/Cotizador/MonedasHistorico";
-    $.getJSON(url, function(data) {
-        var compra = data[0].Compra;
-        var venta = data[0].Venta;
-        $(".data-compra").text(compra);
-        $(".data-venta").text(venta);
-    });
-});
-	</script>		
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function actualizarCotizacion() {
+                var url = "https://www.bna.com.ar/Cotizador/MonedasHistorico";
+                $.getJSON(url, function(data) {
+                    var compra = data[0].Compra;
+                    var venta = data[0].Venta;
+                    $(".data-compra").text(compra);
+                    $(".data-venta").text(venta);
+                });
+            }
+    
+            actualizarCotizacion(); // Llamar a la función para mostrar la cotización al cargar la página
+    
+            setInterval(actualizarCotizacion, 600000); // Actualizar la cotización cada 10 minutos (600,000 ms)
+        });
+    </script>
+    
     
 </body>
 </html>
