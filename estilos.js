@@ -24,7 +24,7 @@ function mostrarRangerarbsoft() {
   );
   document.querySelector(".contenedor-productos").style.display = "none";
   document.querySelector(".contenedor-soporte").style.display = "none";
-  document.querySelector(".container-garantia").style.display = "none";
+  document.querySelector(".contenedor-garantia").style.display = "none";
   document.querySelector(".container-cotizacion").style.display = "none";
 }
 //-- Mostrar ventana de presentación de Contacto --//
@@ -38,7 +38,7 @@ function mostrarContacto() {
   document.querySelector(".container-rangerarbsoft").style.display = "none";
   document.querySelector(".contenedor-productos").style.display = "none";
   document.querySelector(".contenedor-soporte").style.display = "none";
-  document.querySelector(".container-garantia").style.display = "none";
+  document.querySelector(".contenedor-garantia").style.display = "none";
   document.querySelector(".container-cotizacion").style.display = "none";
 }
 //-- Mostrar ventana de presentación de Productos --//
@@ -53,7 +53,7 @@ function mostrarProductos() {
   );
   document.querySelector(".container-rangerarbsoft").style.display = "none";
   document.querySelector(".contenedor-soporte").style.display = "none";
-  document.querySelector(".container-garantia").style.display = "none";
+  document.querySelector(".contenedor-garantia").style.display = "none";
   document.querySelector(".contenedor-contacto").style.display = "none";
   document.querySelector(".container-cotizacion").style.display = "none";
 }
@@ -68,7 +68,7 @@ function mostrarSoporte() {
   document.querySelector(".container-rangerarbsoft").style.display = "none";
   document.querySelector(".contenedor-contacto").style.display = "none";
   document.querySelector(".contenedor-productos").style.display = "none";
-  document.querySelector(".container-garantia").style.display = "none";
+  document.querySelector(".contenedor-garantia").style.display = "none";
   document.querySelector(".container-cotizacion").style.display = "none";
 }
 //-- Mostrar ventana de presentación de Garantía --//
@@ -99,7 +99,7 @@ function mostrarCotizacion() {
   document.querySelector(".contenedor-contacto").style.display = "none";
   document.querySelector(".contenedor-productos").style.display = "none";
   document.querySelector(".contenedor-soporte").style.display = "none";
-  document.querySelector(".container-garantia").style.display = "none";
+  document.querySelector(".contenedor-garantia").style.display = "none";
 }
 //--- Funcion Cotizacion del Dolar Hoy ---//
 $(document).ready(function() {
