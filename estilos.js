@@ -402,7 +402,9 @@ function mostrarVideoRangerarbDisk() {
   document.querySelector(".contenedor-video-profesionales").style.display =
     "none";
 }
+//-------------------------------------------------------------------//
 //-- Mostrar ventana de presentación de Form Suscripción GastroRest--//
+//-------------------------------------------------------------------//
 const FormSuscrip = document.querySelector("#btn4");
 const muestraFormSuscripcion = document.querySelector(
   ".container-form-suscrip"
@@ -509,7 +511,9 @@ function soloLetras(evt) {
     return false;
   }
 }
+//------------------------------------------------------------------//
 //-- Mostrar ventana de presentación de Form Validacion GastroRest--//
+//------------------------------------------------------------------//
 const validarPass = document.querySelector("#btn3");
 const formValidar = document.querySelector(".form-validar");
 validarPass.addEventListener("click", () => {
