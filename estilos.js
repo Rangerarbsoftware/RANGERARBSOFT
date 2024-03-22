@@ -523,8 +523,8 @@ validarPass.addEventListener("click", () => {
 //---  Validar equivalencia de password y password-reit ------------//
 document.addEventListener('DOMContentLoaded', function(){
 document.getElementById('form-validar').addEventListener('submit', function(){
-  var password = document.getElementById('password');
-var confirmarPassword = document.getElementById('password-reit');
+  var password = document.getElementById('password').value;
+  var confirmarPassword = document.getElementById('password-reit').value;
 if(password !==password-reit){
   document.getElementById('password-reit').classList.add('is-invalid');
   event.preventDefault();
