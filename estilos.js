@@ -519,13 +519,22 @@ const formValidar = document.querySelector(".form-validar");
 validarPass.addEventListener("click", () => {
   formValidar.classList.toggle("activado");
 });
-var password = document.getElementById('password');
+
+//---  Validar equivalencia de password y password-reit ------------//
+document.addEventListener('DOMContentLoaded', function(){
+document.getElementById('form-validar').addEventListener('submit', function(){
+  var password = document.getElementById('password');
 var confirmarPassword = document.getElementById('password-reit');
 if(password !==password-reit){
   document.getElementById('password-reit').classList.add('is-invalid');
+  event.preventDefault();
 }else{
   document.getElementById('password-reit').classList.remove('is-invalid');
 }
+})
+
+});
+
 //-- Mostrar Formulario de Recuperación --//
 const enviarCode = document.querySelector("#validar-pass");
 const formEnvCod = document.querySelector(".form-enviar-codigo");
